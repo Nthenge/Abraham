@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+}
+.title{
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navbar-links li{
+    list-style: none;
+}
+.navbar-links a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+.navbar-links li:hover{
+    background-color: #555;
+}
+.toggle-bar{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-bar .bar{
+    height: 3px;
+    width: 100px;
+    background-color: white;
+    border-radius: 10px;
+}
+@media (max-width:1000px) {
+    .toggle-bar{
+        display: flex;
+    }
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+    .navbar{
+        flex-direction:column ;
+        align-items:flex-start;
+    }
+    .navbar-links ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar-links li{
+        text-align: center;
+    }
+    .navbar-links li a{
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active{
+        display: flex;
+    }
+}
+
+
+
+ #credentials{
+	color: red;
+}
+#contact-me{
+    position: relative;
+    border: none;
+	background-color: red;
+	color: white;
+	font-weight: bold;
+	float: left;
+    text-align: center;
+    font-size: 25px;
+    width: 10rem;
+    height: 2rem;
+	margin-left: 8rem;
+	margin-top: 4rem;
+}
+#contact-me:hover{
+    background: darkred;
+}
+select{
+	font-weight: bold;
+	font-size: 5mm;
+	margin-right: 5mm;
+	float: right;
+}
+
+h2{
+	font-weight: bold;
+}
+select:hover{
+	color: red;
+}
+p:hover{
+	color: red;
+}
+.para-text{
+	font-weight: bold;
+	font-size: 5mm;
+	margin-left: 5mm;
+}
+h1:hover{
+	color: red;
+}
+#menu_ib{
+	text-decoration: none;
+	color: red;
+}
+ .email-ib{
+	margin-top: 3mm;
+	height: 12mm;
+	width: 12cm;
+	background-color: black;
+	color: white;
+}
+.password-ib{
+	margin-top: 3mm;
+	height: 12mm;
+	width: 12cm;
+	background-color: black;
+	color: white;
+}
+#name-ib {
+	font-size: 400%;
+	font-weight: bold;
+	float: left;
+	margin-left: 35px;
+	margin-top: 3cm;
+}
+.input-ib{
+	font-size: 100%;
+	float: right;
+	margin-top:3cm;
+	margin-right: 5cm;
+}
+span{
+	color: red;
+}
+#login-ib{
+	border: 0px solid black;
+	height: 12mm;
+	width: 20mm;
+	background-color: red;
+	color: white;
+	font-weight: bold;
+}
+#login-ib:hover{
+	background: darkred;
+}
+.here{
+	text-decoration: none;
+	color: red;
+}
+.here:hover{
+	color: darkred;
+} 
