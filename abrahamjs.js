@@ -116,3 +116,19 @@ $(document).ready(function (){
          $("#myCanvasContainer");
     }
 })
+
+// Contact navigation
+const linkedInButton = document.getElementById('linkedInButton');
+  linkedInButton.addEventListener('click', function() {
+    window.open('https://www.linkedin.com/in/47made', '_blank');
+  });
+
+const twitterButton = document.getElementById('twitterButton');
+  twitterButton.addEventListener('click', function() {
+    window.open('https://twitter.com/Abraham47c?t=VLibWXokv2bDeKPzB-VUvA&s=09', '_blank');
+  });
+
+  const githubButton = document.getElementById('githubButton');
+  githubButton.addEventListener('click', function() {
+    window.open('https://github.com/Nthenge', '_blank');
+  });

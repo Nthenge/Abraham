@@ -6,7 +6,14 @@
     background-color: rgb(44, 43, 43);
     color: rgb(255, 255, 255);
 }
-
+#skill-section-right {
+    display: flex;
+    flex-wrap: wrap; 
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }     
 /* login section styling */
 #login-text{
     margin-top: 35px;
@@ -117,7 +124,130 @@ header{
 .btns-container .fas:nth-child(2){
     display: none;
 }
+
 /* aside section starts here */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    background-color: #191919 ;
+  }
+  
+  .up {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    background-color:#191919 ;
+  }
+  
+  .down {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    background-color: #191919 ;
+  }
+  
+  .card1 {
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 90px 5px 5px 5px;
+    transition: .2s ease-in-out;
+  }
+  
+  .instagram {
+    margin-top: 1em;
+    margin-left: 0.8em;
+    fill: #cc39a4;
+  }
+  
+  .card2 {
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 5px 90px 5px 5px;
+    transition: .2s ease-in-out;
+  }
+  
+  .twitter {
+    margin-top: 1em;
+    margin-left: -.9em;
+    fill: #03A9F4;
+  }
+  
+  .card3 {
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 5px 5px 5px 90px;
+    transition: .2s ease-in-out;
+  }
+  
+  .github {
+    margin-top: -.6em;
+    margin-left: 1.2em;
+  }
+  
+  .card4 {
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 5px 5px 90px 5px;
+    transition: .2s ease-in-out;
+  }
+  
+  .discord {
+    margin-top: -.9em;
+    margin-left: -1.2em;
+    fill: #8c9eff;
+  }
+  
+  .card1:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #cc39a4;
+  }
+  
+  .card1:hover .instagram {
+    fill: white;
+  }
+  
+  .card2:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #03A9F4;
+  }
+  
+  .card2:hover .twitter {
+    fill: white;
+  }
+  
+  .card3:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: black;
+  }
+  
+  .card3:hover .github {
+    fill: white;
+  }
+  
+  .card4:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #8c9eff;
+  }
+  
+  .card4:hover .discord {
+    fill: white;
+  }
+
+
 .aside{
     width: 100%;
     height: 0;
@@ -232,7 +362,7 @@ p{
 .head{
     display: inline-block;
     font-weight: bold;
-    font-size: 4.5rem;
+    font-size: 1.5rem;
     line-height: 80px;
     letter-spacing: -1px;
     padding: -3vh 0 0 0;
@@ -264,10 +394,12 @@ p{
 }
 
 .hii{
+    font-size: 1.5rem;
     color: #08fdd8;
     display: inline-block;
     background-color: transparent;
     cursor: pointer;
+    border: 1px solid red;
 }
 .hii:hover{
     animation: animatee 0.4s;
@@ -659,6 +791,9 @@ form span{
     color: #08fdd8;
 }
 #myCanvasContainer{
+    display: flex;
+    justify-items: center;
+    width: 100%;
     color: #08fdd8;
     align-items: center;
 }
@@ -779,7 +914,15 @@ form span{
         font-size: 5rem;
         font-weight: 700;
     }
-
+p{
+display: flex;
+background-color: inherit;
+color: #08fdd8;
+justify-content: space-between;
+text-align: center;
+overflow: visible;
+font-size: small;
+}
 /* media section for bigger screens */
 @media screen and (min-width: 950px)  {
     /* login section */
@@ -788,10 +931,18 @@ form span{
             justify-content: space-between;
             flex-direction: row;
         }
+        .hii{
+            font-size: 4.5rem;
+            color: #08fdd8;
+            display: inline-block;
+            background-color: transparent;
+            cursor: pointer;
+        }
         #login--greeting{
             position: relative;
             top: -100px;
         }
+
     /* login sectoin ends here */
     header{
         width: 8rem;
@@ -1035,13 +1186,4 @@ form span{
         overflow: visible;
         font-size: small;
       }
-}
- p{
-display: flex;
-background-color: inherit;
-color: #08fdd8;
-justify-content: space-between;
-text-align: center;
-overflow: visible;
-font-size: small;
 }
