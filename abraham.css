@@ -310,6 +310,7 @@ nav{
     background-color: #0a0909;
 }
 .nav-links a{
+    border: 1px solid red;
     background-color: rgb(22, 21, 21);
     display: block;
     text-align: center;
