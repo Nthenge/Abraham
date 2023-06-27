@@ -399,7 +399,6 @@ p{
     display: inline-block;
     background-color: transparent;
     cursor: pointer;
-    border: 1px solid red;
 }
 .hii:hover{
     animation: animatee 0.4s;
