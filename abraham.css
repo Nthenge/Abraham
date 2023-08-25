@@ -110,6 +110,7 @@ header{
              0 9px 0 #f50057, 0 10px 0 #f50057,
              0 11px 0 #f50057, 0 12px 0 #f50057,
              0 20px 30px rgba(0, 0, 0, 0.5);
+             border: 1px solid red;
 }
 #about_me{
     margin-bottom: 7rem;
